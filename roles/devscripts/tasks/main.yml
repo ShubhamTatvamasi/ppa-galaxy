@@ -3,4 +3,6 @@
   become: yes
   apt:
     update_cache: yes
-    name: devscripts
+    pkg:
+      - devscripts
+      - dh-make
