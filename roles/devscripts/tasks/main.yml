@@ -6,3 +6,4 @@
     pkg:
       - devscripts
       - dh-make
+      - dh-golang
