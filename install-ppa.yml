@@ -1,0 +1,5 @@
+---
+- name: Install PPA packages
+  hosts: all
+  roles:
+    - role: devscripts

@@ -1,0 +1,6 @@
+---
+- name: Install devscripts
+  become: yes
+  apt:
+    update_cache: yes
+    name: devscripts
