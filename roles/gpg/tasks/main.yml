@@ -1,0 +1,8 @@
+---
+- name: Set Private key
+  set_fact:
+    gpg_private_key: "{{ lookup('file', 'private.pgp') }}"
+
+- name: Import GPG Key
+  shell: |
+    echo "{{ gpg_private_key }}" | gpg --batch --passphrase "{{ gpg_passphrase }}" --import
